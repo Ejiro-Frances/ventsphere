@@ -1,4 +1,5 @@
 $primary-color: #1f253f;
+$secondary-color: #1d3d3a;
 $accent-color: #eae68b;
 $bg-color: #f7f6f2;
 $slate-gray: #6b7280;
@@ -23,7 +24,7 @@ a {
 }
 
 body {
-  color: white;
+  color: $primary-color;
   font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.4;
@@ -51,6 +52,42 @@ body {
 .btn--secondary {
   background: $accent-color;
   color: $primary-color;
+}
+
+.primary-title {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1;
+  max-width: 20ch;
+}
+
+// font-family: Clash Grotesk;
+// font-weight: 500;
+// font-size: 48px;
+// line-height: 100%;
+// letter-spacing: 0%;
+// text-align: center;
+
+.section__intro {
+  // font-family: Clash Grotesk;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #b1ad4e;
+}
+
+// utility styles
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 // Hero section
@@ -126,5 +163,106 @@ body {
 
   .description {
     max-width: 17ch;
+  }
+}
+
+// ABout section
+.section__about {
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 40rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+
+  .grid-2-cols {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .card--icon {
+    background: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 7rem;
+  }
+  .primary-title {
+    text-align: center;
+  }
+
+  .section__about__card {
+    border-radius: 1rem;
+    padding: 2.5rem;
+    color: #ffffff;
+  }
+
+  .section__about__card--primary {
+    background: $primary-color;
+  }
+
+  .section__about__card--secondary {
+    background: $secondary-color;
+  }
+
+  .section__about__card--title {
+    // font-family: Clash Grotesk;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .section__about__card--description {
+    // font-family: Instrument Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+// CTA Section
+.section__cta {
+  position: relative;
+  background: $primary-color;
+  max-width: 70rem;
+  min-height: 30rem;
+  margin: 1rem auto;
+  border-radius: 1.875rem;
+
+  .section__cta--content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .primary-title {
+    color: #ffffff;
+    max-width: 20ch;
+    text-align: center;
+  }
+
+  .img__decor--top-left {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+  }
+
+  .img__decor--bottom-left {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+  }
+
+  .img__decor--top-right {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+  }
+
+  .img__decor--bottom-right {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
   }
 }

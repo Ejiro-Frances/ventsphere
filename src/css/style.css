@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  color: white;
+  color: #1f253f;
   font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.4;
@@ -45,6 +45,33 @@ body {
 .btn--secondary {
   background: #eae68b;
   color: #1f253f;
+}
+
+.primary-title {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1;
+  max-width: 20ch;
+}
+
+.section__intro {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #b1ad4e;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .section__hero {
@@ -114,6 +141,90 @@ body {
 }
 .featured-brands .description {
   max-width: 17ch;
+}
+
+.section__about {
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 40rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.section__about .grid-2-cols {
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.section__about .card--icon {
+  background: rgba(255, 255, 255, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 7rem;
+}
+.section__about .primary-title {
+  text-align: center;
+}
+.section__about .section__about__card {
+  border-radius: 1rem;
+  padding: 2.5rem;
+  color: #ffffff;
+}
+.section__about .section__about__card--primary {
+  background: #1f253f;
+}
+.section__about .section__about__card--secondary {
+  background: #1d3d3a;
+}
+.section__about .section__about__card--title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 28px;
+}
+.section__about .section__about__card--description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section__cta {
+  position: relative;
+  background: #1f253f;
+  max-width: 70rem;
+  min-height: 30rem;
+  margin: 1rem auto;
+  border-radius: 1.875rem;
+}
+.section__cta .section__cta--content {
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.section__cta .primary-title {
+  color: #ffffff;
+  max-width: 20ch;
+  text-align: center;
+}
+.section__cta .img__decor--top-left {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+.section__cta .img__decor--bottom-left {
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+}
+.section__cta .img__decor--top-right {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+.section__cta .img__decor--bottom-right {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
